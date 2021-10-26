@@ -45,9 +45,6 @@ int handle_query(int lower, int higher) {
   return h - l + 1;
 }
 
-//2 3 5 7
-
-
 int main() {
   FILE *fin, *fout;
   fin = fopen("haybales.in", "r");

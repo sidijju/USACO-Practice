@@ -1,3 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string>
+#include <cmath>
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <set>
+#include <map>
+
+using namespace std;
+
+int main() {
+  FILE *fin, *fout;
+  fin = fopen(".in", "r");
+  fout = fopen(".out", "w");
+
+}
+
 //logN
 int binsearch(int target, vector<int> arr) {
   int low = 0;
