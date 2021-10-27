@@ -36,3 +36,40 @@ int binsearch(int target, vector<int> arr) {
   }
   return middle;
 }
+
+class union_find {
+  private:
+    vector<int> parent;
+    vector<int> size;
+
+
+  public:
+    void add(int a) {
+      parent.push_back(a);
+      size.push_back(1);
+    }
+
+    void union(int a, int b) {
+      a = find(a);
+      b = find(b);
+
+      if (a != b) {
+        if (size[a] < size[b]) {
+          parent[a] = b;
+          size[a] += size[b];
+        } else {
+          parent[b] = a;
+          size[b] += size[a];
+        }
+      }
+
+    }
+
+    int find(int a) {
+      if (parent[a] != a) {
+        parent[a] = find(parent[a]);
+        return parent[a];
+      }
+      return a;
+    }
+};
