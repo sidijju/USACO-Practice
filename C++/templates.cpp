@@ -10,8 +10,16 @@
 #include <math.h>
 #include <queue>
 #define FOR(i, a, b) for(int i = a; i < b; i++)
-#define FOR(i, a) for(int i = 0; i < a; i++)
+#define SORT(vec) sort(vec.begin(), vec.end())
+#define A first
+#define B second
+#define mp make_pair
+#define pb push_back
 #define ll long long
+#define INF 1000000010
+typedef pair<int, int> ii;
+typedef vector<int> vi;
+typedef vector<ii> vii;
 
 using namespace std;
 
