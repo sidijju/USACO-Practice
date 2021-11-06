@@ -7,7 +7,11 @@
 #include <vector>
 #include <set>
 #include <map>
-#include <math>
+#include <math.h>
+#include <queue>
+#define FOR(i, a, b) for(int i = a; i < b; i++)
+#define FOR(i, a) for(int i = 0; i < a; i++)
+#define ll long long
 
 using namespace std;
 
@@ -17,6 +21,25 @@ int main() {
   fout = fopen(".out", "w");
 
 }
+
+//////// UTILITY /////////
+
+//point struct plus distance funct
+struct Point {
+  int x;
+  int y;
+
+  Point(int a, int b) {
+    x = a;
+    y = b;
+  }
+
+  int dist(Point b) {
+    return (x - b.x) * (x - b.x) + (y - b.y) * (y - b.y);
+  }
+};
+
+/////// ALGORITHMS ///////
 
 //logN
 int binsearch(int target, vector<int> arr) {
@@ -37,6 +60,8 @@ int binsearch(int target, vector<int> arr) {
   return middle;
 }
 
+
+/////// DATA STRUCTURES ////////
 class union_find {
   private:
     vector<int> parent;
