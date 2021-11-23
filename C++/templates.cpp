@@ -9,7 +9,9 @@
 #include <map>
 #include <math.h>
 #include <queue>
+using namespace std;
 #define FOR(i, a, b) for(int i = a; i < b; i++)
+#define FORr(i, a, b) for(int i = a; i > b; i--)
 #define SORT(vec) sort(vec.begin(), vec.end())
 #define A first
 #define B second
@@ -21,7 +23,7 @@ typedef pair<int, int> ii;
 typedef vector<int> vi;
 typedef vector<ii> vii;
 
-using namespace std;
+
 
 int main() {
   FILE *fin, *fout;
