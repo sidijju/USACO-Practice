@@ -23,8 +23,6 @@ typedef pair<int, int> ii;
 typedef vector<int> vi;
 typedef vector<ii> vii;
 
-
-
 int main() {
   FILE *fin, *fout;
   fin = fopen(".in", "r");
